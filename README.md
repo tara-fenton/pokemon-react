@@ -66,12 +66,12 @@ The limit is pretty high -- you shouldn't run out -- but if you do, either go to
 - You have a PokéApp in this directory
 - Your PokéApp has been styled and looks _killer_
 - Your `userstories.md` has user stories in it
-- 
+- Your PokéApp is deployed!
 
 ## 🚀 Your homework submission should include:
 
 - A pull request created on _this repo_.
-- [any additional steps]
+- Your BitBalloon link
 - Completion, comfort, wins, losses, questions... you know the drill.
 
 ## This homework is due 🚨 11PM ON SUNDAY NIGHT 🚨
