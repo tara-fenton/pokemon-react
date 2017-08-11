@@ -10,7 +10,7 @@ Over the next two days, you will be building a Pokémon app in **React** using t
 
 ## Here's your mission:
 
-Build an app that renders the names of the first 151 Pokémon in the pokéapi database on page load.  When the user clicks a name, the app should render information about that Pokémon, including the name and weight.
+Build an app that renders the names of the first 151 Pokémon in the pokéapi database on page load. (Maybe this is `http://pokeapi.co/api/v2/pokemon?limit=151`... or something.... 🤔)  When the user clicks a name, the app should render information about that Pokémon, including the name and weight.
 
 ## Deliverables
 
