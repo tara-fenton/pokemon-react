@@ -32,7 +32,7 @@ Build an app that renders the names of the first 151 Pokémon in the pokéapi da
     - Take everything in the build folder and stick it up on BitBalloon!
     - Include your BitBalloon link on your pull request!
 
-## React Tips
+### React Tips
 
 When loading initial data via an API call, place the API call in the component's `componentDidMount` method:
 
@@ -77,4 +77,6 @@ The limit is pretty high -- you shouldn't run out -- but if you do, either go to
 - Completion, comfort, wins, losses, questions... you know the drill.
 
 ## This homework is due 🚨 11PM ON SUNDAY NIGHT 🚨
+
+![whichone](./which.jpg)
 
