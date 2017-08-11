@@ -1,5 +1,7 @@
 # HOMEWORK: PokéApp
 
+![catch](./frameworks.jpg)
+
 Over the next two days, you will be building a Pokémon app in **React** using this super neat, super free [PokeApi](https://pokeapi.co/)!
 
 ## Here's your mockup:
