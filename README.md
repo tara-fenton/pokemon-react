@@ -76,7 +76,7 @@ The limit is pretty high -- you shouldn't run out -- but if you do, either go to
 - Your BitBalloon link
 - Completion, comfort, wins, losses, questions... you know the drill.
 
-## This homework is due 🚨 11PM ON SUNDAY NIGHT 🚨
+## This homework is due 🚨 11PM ON WEDNESDAY NIGHT 🚨
 
 ![whichone](./which.jpg)
 
