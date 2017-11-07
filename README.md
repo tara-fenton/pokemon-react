@@ -27,7 +27,7 @@ Build an app that renders the names of the first 151 Pokémon in the pokéapi da
 4. Submit hw via a pull request!
 
 5. Deploy your amazing PokéApp!!
-    - Run `yarn build`
+    - Run `npm build`
     - A new folder, `/build`, will appear
     - Take everything in the build folder and stick it up on BitBalloon!
     - Include your BitBalloon link on your pull request!
