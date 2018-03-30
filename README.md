@@ -2,7 +2,7 @@
 
 ![catch](./frameworks.jpg)
 
-Over the next two days, you will be building a Pokémon app in **React** using this super neat, super free [PokeApi](https://pokeapi.co/)!
+Over the weekend, you will be building a Pokémon app in **React** using this super neat, super free [PokeApi](https://pokeapi.co/)!
 
 ## Here's your mockup:
 
@@ -76,7 +76,7 @@ The limit is pretty high -- you shouldn't run out -- but if you do, either go to
 - Your BitBalloon link
 - Completion, comfort, wins, losses, questions... you know the drill.
 
-## This homework is due 🚨 11PM ON WEDNESDAY NIGHT 🚨
+## This homework is due 🚨 11PM ON SUNDAY NIGHT 🚨
 
 ![whichone](./which.jpg)
 
