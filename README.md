@@ -10,7 +10,11 @@ Over the weekend, you will be building a Pokémon app in **React** using this su
 
 ## Here's your mission:
 
-Build an app that renders the names of the first 151 Pokémon in the pokéapi database on page load. (Maybe this is `https://pokeapi.co/api/v2/pokemon?limit=151`... or something.... 🤔)  When the user clicks a name, the app should render information about that Pokémon, including the name and weight.
+Build an app that renders the names of the first 151 Pokémon in the Pokéapi database on page load. (Maybe this is `https://pokeapi.co/api/v2/pokemon?limit=151`... or something.... 🤔) 
+
+There's documentation pages on [the Pokemon list endpoint](https://pokeapi.co/docsv2/#resource-lists) and [the single Pokemon endpoint](https://pokeapi.co/docsv2/#pokemon) on the PokeAPI website. Keep in mind that the Pokemon's name can be used to build URLs instead of the ID - e.g. https://pokeapi.co/api/v2/pokemon/bulbasaur/ is the endpoint for information about Bulbasaur.
+
+When the user clicks a name, the app should render information about that Pokémon, including the name and weight.
 
 ## Deliverables
 
@@ -31,6 +35,15 @@ Build an app that renders the names of the first 151 Pokémon in the pokéapi da
     - A new folder, `/build`, will appear
     - Take everything in the build folder and stick it up on BitBalloon!
     - Include your BitBalloon link on your pull request!
+
+## BONUS
+
+- Autocomplete: Add an input above the list of Pokemon which, as the user types, filters the list of Pokemon that are displayed to the user.
+- Debounce the autocomplete method, so the list isn't refreshing with each character the user types.
+
+## SUPER BONUS
+
+- Infinite Scroll is the practice of loading more content when you get to the bottom of a page. Implement infinite scroll in your Pokemon List component. When the scroll depth of the user gets close to the bottom, make a new HTTP request for the next page of API results. When the user gets to the bottom of that, make another request. 
 
 ### React Tips
 
