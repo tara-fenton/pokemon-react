@@ -9,23 +9,39 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      listDataFromChild: null
+      characterName: null,
+      characterWeight: null,
+      characterAbilities: null
     };
     this.getData = this.getData.bind(this)
   }
+  // data sent from list to pass to profile
   getData(val){
-    // do not forget to bind getData in constructor
     console.log("value in get data ",val);
+    this.setState({
+      characterName: val.name,
+      characterWeight: val.weight,
+      // map through the array of abilities
+      characterAbilities: val.abilities.map(ability =>
+        <div key={ability.ability.name} >
+          {ability.ability.name}
+        </div>
+      )
+    })
   }
   render() {
     return (
       <div className="App">
         <div className="left">
           <CharacterSearch />
-          <CharacterList  sendData={this.getData}/>
+          <CharacterList sendData={this.getData}/>
         </div>
         <div className="right">
-          <CharacterProfile  />
+          <CharacterProfile
+            passedNameValue={this.state.characterName}
+            passedWeightValue={this.state.characterWeight}
+            passedAbilitiesValue={this.state.characterAbilities}
+          />
         </div>
       </div>
     );

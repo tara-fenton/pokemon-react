@@ -6,33 +6,33 @@ class CharacterList extends Component {
     super()
     this.state = {
       list: [],
-      oneCharacter: []
     }
   }
+  // on click event on the name of the character in the list
   sendDataToProfile(name) {
-    console.log('clicked '+name)
     fetch(`https://pokeapi.co/api/v2/pokemon/${name}`)
     .then(response => response.json())
     .then(data => {
-      console.log(data)
-      this.oneCharacter = data;
-      this.demoMethod()
+      // sends the data to the parent
+      this.props.sendData(data);
     })
   }
-  demoMethod(){
-   this.props.sendData(this.oneCharacter);
-  }
+  // once the component is mounted make the call to the api
   componentDidMount(){
     fetch('https://pokeapi.co/api/v2/pokemon/?limit=151')
     .then(response => response.json())
     .then(data => {
+      // map the array to return character names
       let characters = data.results.map((character) => {
         return (
+          // display the names in a div and attach a click event to send
+          // the data to the profile through the parent app
           <div key={character.name} onClick={ () => this.sendDataToProfile(character.name) }>
              {character.name}
          </div>
         )
       })
+      // set the state of the list to display on this list component
       this.setState({list:characters});
     })
   }

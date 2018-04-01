@@ -14,9 +14,9 @@ class CharacterProfile extends Component {
       <div className='profile'>
         <h2 className="center">Poke Profile</h2>
         <div className="details">
-          <div className="item">Name: {this.state.name}</div>
-          <div className="item">Weight: </div>
-          <div className="item">Abilities: </div>
+          <div className="item">Name: {this.props.passedNameValue}</div>
+          <div className="item">Weight: {this.props.passedWeightValue}</div>
+          <div className="item">Abilities: {this.props.passedAbilitiesValue}</div>
         </div>
       </div>
     )
