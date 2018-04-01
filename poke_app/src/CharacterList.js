@@ -8,16 +8,23 @@ class CharacterList extends Component {
       list: []
     }
   }
-  //const API :
+  sendDataToProfile(name) {
+    console.log('clicked '+name)
+    fetch(`https://pokeapi.co/api/v2/pokemon/${name}`)
+    .then(response => response.json())
+    .then(data => {
+      console.log(data)
+    })
+  }
   componentDidMount(){
     fetch('https://pokeapi.co/api/v2/pokemon/?limit=151')
     .then(response => response.json())
     .then(data => {
       let characters = data.results.map((character) => {
         return (
-          <div key={character.name}>
-            {character.name}
-          </div>
+          <div key={character.name} onClick={ () => this.sendDataToProfile(character.name) }>
+             {character.name}
+         </div>
         )
       })
       this.setState({list:characters});
@@ -27,7 +34,8 @@ class CharacterList extends Component {
     return (
       <div className='characters'>
         <h2 className="center">Pokemon</h2>
-        <div className='list'>{this.state.list}
+        <div className='list noselect'>
+          {this.state.list}
         </div>
       </div>
     )

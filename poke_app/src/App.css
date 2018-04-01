@@ -24,6 +24,13 @@ button {
   border: 1px solid red;
   width: 120px;
   height: 100px;
+  margin: 0 auto;
+  overflow: auto;
+  overflow-y: scroll;
+  border: 1px solid #0f0;
+  padding: 2px;
+  text-align: justify;
+  background: transparent;
 }
 .right {
   border: 1px solid black;
@@ -39,4 +46,13 @@ button {
 .item {
   border: 1px solid purple;
   padding: 10px 0;
+}
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
 }

@@ -6,6 +6,13 @@ import CharacterList from './CharacterList.js';
 import CharacterProfile from './CharacterProfile.js';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      listDataFromChild: null
+    };
+  }
+  
   render() {
     return (
       <div className="App">
