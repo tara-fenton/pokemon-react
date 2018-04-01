@@ -4,7 +4,8 @@ class CharacterProfile extends Component {
   constructor(props) {
     super()
     this.state = {
-      name: ''
+      name: '',
+      listDataFromChild: null
     }
   }
 

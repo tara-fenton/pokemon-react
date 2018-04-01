@@ -5,7 +5,8 @@ class CharacterList extends Component {
   constructor(props) {
     super()
     this.state = {
-      list: []
+      list: [],
+      oneCharacter: []
     }
   }
   sendDataToProfile(name) {
@@ -14,7 +15,12 @@ class CharacterList extends Component {
     .then(response => response.json())
     .then(data => {
       console.log(data)
+      this.oneCharacter = data;
+      this.demoMethod()
     })
+  }
+  demoMethod(){
+   this.props.sendData(this.oneCharacter);
   }
   componentDidMount(){
     fetch('https://pokeapi.co/api/v2/pokemon/?limit=151')

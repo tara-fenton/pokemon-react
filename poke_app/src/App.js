@@ -11,17 +11,21 @@ class App extends Component {
     this.state = {
       listDataFromChild: null
     };
+    this.getData = this.getData.bind(this)
   }
-  
+  getData(val){
+    // do not forget to bind getData in constructor
+    console.log("value in get data ",val);
+  }
   render() {
     return (
       <div className="App">
         <div className="left">
           <CharacterSearch />
-          <CharacterList />
+          <CharacterList  sendData={this.getData}/>
         </div>
         <div className="right">
-          <CharacterProfile />
+          <CharacterProfile  />
         </div>
       </div>
     );
