@@ -11,9 +11,11 @@ class App extends Component {
     this.state = {
       characterName: null,
       characterWeight: null,
-      characterAbilities: null
+      characterAbilities: null,
+      searchText: null
     };
     this.getData = this.getData.bind(this)
+    this.getText = this.getText.bind(this)
   }
   // data sent from list to pass to profile
   getData(val){
@@ -29,12 +31,20 @@ class App extends Component {
       )
     })
   }
+  // data text from search to pass to list
+  getText(val){
+    console.log("value in get text ",val);
+    this.setState({
+      searchText: val
+    })
+  }
   render() {
     return (
       <div className="App">
+        <img src={logo} className="App-logo" alt="logo" />
         <div className="left">
-          <CharacterSearch />
-          <CharacterList sendData={this.getData}/>
+          <CharacterSearch sendText={this.getText} />
+          <CharacterList sendData={this.getData} />
         </div>
         <div className="right">
           <CharacterProfile
